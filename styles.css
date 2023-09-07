@@ -1,0 +1,46 @@
+/*Cascading Style Sheets o Hojas de Estilo en Cascada*/
+
+.title {
+    text-align: center;
+}
+.balloon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.balloon {
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    animation: balloon-float 4s ease-in-out infinite; 
+    z-index: 10;
+    transform-origin: bottom center ;
+}
+.balloon::before {
+    content: "\25b2";
+    position: absolute;
+    bottom: -12px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+}
+@keyframes balloon-float {
+    0%,
+    100% {
+        transform: translateY(0) rotate(-4eg)
+    }
+    50%{
+        transform: translateY(-30px) rotate(4deg);
+    }   
+}
+.subtitle {
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+.congratulations {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
