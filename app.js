@@ -1,4 +1,4 @@
-// Vamos a declarar un variable usando let o const //
+// Declaramos una variable usando let o const //
 
 const colors = [
     "red", "blue", "pink", "green", "purple", "yellow", "black", "brown"
